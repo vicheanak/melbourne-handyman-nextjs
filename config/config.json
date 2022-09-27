@@ -1,23 +1,50 @@
 {
   "development": {
     "username": "postgres",
-    "password": "123",
+    "password": "password",
     "database": "melbourne_handyman_postgres",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "secretKey": "aZVbcqQ26CSDv8oAukeeJk1XktLos0NV",
+    "logging": false
   },
   "test": {
     "username": "postgres",
-    "password": "123",
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "password": "password",
+    "database": "melbourne_handyman_postgres",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "secretKey": "aZVbcqQ26CSDv8oAukeeJk1XktLos0NV",
+    "logging": false
   },
   "production": {
     "username": "postgres",
-    "password": "123",
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "password": "password",
+    "database": "melbourne_handyman_postgres",
+    "host": "localhost",
+    "dialect": "postgres",
+    "operatorsAliases": false,
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    },
+    "secretKey": "aZVbcqQ26CSDv8oAukeeJk1XktLos0NV",
+    "logging": false
   }
 }
