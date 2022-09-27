@@ -10,8 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
-      models.Post.belongsTo(models.Category);
+      models.Post.belongsTo(models.Category)
     }
   }
   Post.init({
@@ -19,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     content: DataTypes.STRING,
     metaData: DataTypes.STRING,
     imageUrl: DataTypes.STRING,
+    isCarousel: DataTypes.BOOLEAN,
     status: DataTypes.BOOLEAN
   }, {
     sequelize,

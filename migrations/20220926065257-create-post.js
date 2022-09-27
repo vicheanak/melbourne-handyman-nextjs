@@ -20,6 +20,9 @@ module.exports = {
       imageUrl: {
         type: Sequelize.STRING
       },
+      isCarousel: {
+        type: Sequelize.BOOLEAN
+      },
       status: {
         type: Sequelize.BOOLEAN
       },
@@ -32,8 +35,8 @@ module.exports = {
         type: Sequelize.DATE
       },
       CategoryId: {
-          type: Sequelize.INTEGER,
-          references: { model: 'Categories', key: 'id' }
+        type: Sequelize.INTEGER,
+        references: { model: 'Categories', key: 'id' }
       }
     });
   },
