@@ -12,7 +12,7 @@ module.exports = {
       "CategoryId": 1,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/Kitchen.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/Kitchen.jpg"
     },
     {
       "id": 2,
@@ -24,7 +24,7 @@ module.exports = {
       "CategoryId": 1,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/Fencing.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/Fencing.jpg"
     },
     {
       "id": 3,
@@ -36,7 +36,7 @@ module.exports = {
       "CategoryId": 1,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/Fencing_2.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/Fencing_2.jpg"
     },
     {
       "id": 4,
@@ -48,7 +48,7 @@ module.exports = {
       "CategoryId": 2,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/photo_2021-05-12_16-42-40-2.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/photo_2021-05-12_16-42-40-2.jpg"
     },
     {
       "id": 5,
@@ -60,7 +60,7 @@ module.exports = {
       "CategoryId": 2,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/photo_2021-05-12_16-42-40-4.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/photo_2021-05-12_16-42-40-4.jpg"
     },
     {
       "id": 6,
@@ -72,7 +72,7 @@ module.exports = {
       "CategoryId": 2,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/photo_2021-05-12_16-42-40-1200x900.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/photo_2021-05-12_16-42-40-1200x900.jpg"
     },
     {
       "id": 7,
@@ -84,7 +84,7 @@ module.exports = {
       "CategoryId": 2,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/photo_2021-05-12_16-42-41-2.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/photo_2021-05-12_16-42-41-2.jpg"
     },
     {
       "id": 8,
@@ -96,7 +96,7 @@ module.exports = {
       "CategoryId": 3,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/photo_2021-05-12_16-42-41-3-1200x900.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/photo_2021-05-12_16-42-41-3-1200x900.jpg"
     },
     {
       "id": 9,
@@ -108,7 +108,7 @@ module.exports = {
       "CategoryId": 3,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/Flooring.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/Flooring.jpg"
     },
     {
       "id": 10,
@@ -120,7 +120,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/Jan-2021-4-1200x900.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/Jan-2021-4-1200x900.jpg"
     },
     {
       "id": 11,
@@ -132,7 +132,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/Jan-2021-8.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/Jan-2021-8.jpg"
     },
     {
       "id": 12,
@@ -144,7 +144,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/Landscape-800x1067.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/Landscape-800x1067.jpg"
     },
     {
       "id": 13,
@@ -156,7 +156,7 @@ module.exports = {
       "CategoryId": 5,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/Jan-2021-9-800x1067.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/Jan-2021-9-800x1067.jpg"
     },
     {
       "id": 14,
@@ -168,7 +168,7 @@ module.exports = {
       "CategoryId": 5,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/Jan-2021-9-800x1067.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/Jan-2021-9-800x1067.jpg"
     },
     {
       "id": 15,
@@ -180,7 +180,7 @@ module.exports = {
       "CategoryId": 1,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://melbourne-handyman.com.au/wp-content/uploads/2015/12/Jan-2021-10-800x1067.jpg"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/Jan-2021-10-800x1067.jpg"
     }], {});
   },
 
