@@ -1,6 +1,0 @@
-sequelize model:create --name Customer --attributes fullname:string,phonenumber:string,address:string,email:string,postcode:string,device_id:string,profilePic:string
-sequelize model:create --name Quote --attributes title:string,description:string,status:string,address:string,postcode:string,email:string,phonenumber:string
-sequelize model:create --name Image --attributes imageUrl:string
-sequelize model:create --name Category --attributes name:string
-sequelize model:create --name Post --attributes title:string,content:string,metaData:string,imageUrl:string,status:boolean
-sequelize model:create --name User --attributes name:string,username:string,password:string,token:string
