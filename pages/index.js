@@ -20,7 +20,7 @@ const Home = ({posts, error}) => {
       <main className={styles.main}>
           <h1>Hello World</h1>
             {posts.posts.map(post => (
-              <Image loader={myLoader} src={post.imageUrl} width={500}
+              <Image key={post.id} loader={myLoader} src={post.imageUrl} width={500}
               height={500}/>
             ))}
       </main>
