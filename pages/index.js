@@ -27,7 +27,7 @@ const Home = ({posts, error}) => {
 
       <footer className={styles.footer}>
        
-          Powered by Melbourne Handyman
+          Copyright by Melbourne Handyman 
        
       </footer>
     </div>
