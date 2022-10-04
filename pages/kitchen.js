@@ -6,7 +6,7 @@ import axios from 'axios';
 import logoPic from '../public/images/mh_logo.png'
 import Link from 'next/link';
 
-const Home = ({posts, error}) => {
+const Kitchen = ({posts, error}) => {
   
   const myLoader=({src})=>{
     return src;
@@ -53,14 +53,7 @@ const Home = ({posts, error}) => {
             </ul>
         </nav>
         <main className={styles.main}>
-            <div class={styles.imageContainer}>
-            {posts.posts?.map(post => (
-                <div class={styles.imageContent}>
-                  <Image key={post.id} loader={myLoader} src={post.imageUrl} width={500}
-              height={500}/>
-                </div>
-            ))}
-            </div>
+           <h1>Kitchen</h1>
       </main>
 
       <footer className={styles.footer}>
@@ -86,4 +79,4 @@ export async function getServerSideProps({params,req,res,query,preview,previewDa
 }
 
 
-export default Home;
+export default Kitchen;
