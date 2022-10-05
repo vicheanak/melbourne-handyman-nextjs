@@ -7,6 +7,8 @@ import logoPic from '../public/images/mh_logo.png'
 import Link from 'next/link';
 import Header from '../src/components/Header';
 import Nav from '../src/components/Nav';
+import MainComponent from '../src/components/Main';
+import FooterComponent from '../src/components/Footer';
 
 const Home = ({posts, error}) => {
   
@@ -17,23 +19,9 @@ const Home = ({posts, error}) => {
   return (
     <div className={styles.container}>
       <Header />
-        <Nav />
-      <main className={styles.main}>
-            <div class={styles.imageContainer}>
-            {posts.posts?.map(post => (
-                <div class={styles.imageContent}>
-                  <Image key={post.id} loader={myLoader} src={post.imageUrl} width={500}
-              height={500}/>
-                </div>
-            ))}
-            </div>
-      </main>
-
-      <footer className={styles.footer}>
-       
-          Copyright by Melbourne Handyman 
-       
-      </footer>
+      <Nav />
+      <MainComponent posts={posts} />
+      <FooterComponent />
     </div>
   )
 }
