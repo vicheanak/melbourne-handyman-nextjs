@@ -5,12 +5,19 @@ import Image from 'next/image';
 
 const FooterComponent = (props) => {
 
-    const myLoader=({src})=>{
+    const myLoader = ({ src }) => {
         return src;
     }
-    
+
     return (
         <footer className={styles.footer}>
+            <Link href="/quote">
+                <a>
+                    <div className={styles.getQuote}>
+                        Quote
+                    </div>
+                </a>
+            </Link>
             Copyright by Melbourne Handyman 2022
         </footer>
     );

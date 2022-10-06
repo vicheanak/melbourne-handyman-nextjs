@@ -149,6 +149,76 @@
   /* background-color: rebeccapurple; */
 }
 
+.heading{
+  text-align: center;
+  font-size: 20px;
+}
+
+.getQuote{
+  background-color: #262262;
+  padding: 15px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 80px;
+  text-align: center;
+  border: 2px solid;
+  color: #ffe022;
+  border-radius: 31px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+}
+
+.waitingForConnection {
+  animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+}
+
+.formContainer{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formInput{
+  display: block;
+  margin: 10px auto;
+  width: 300px;
+  height: 40px;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.button{
+  width: 300px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-width: 0px;
+}
+
+.formInputTextArea{
+  display: block;
+  margin: 10px auto;
+  width: 300px;
+  height: 120px;
+  border: 1px solid;
+  padding: 10px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+@keyframes blinker { to { opacity: 0; } }
+
+.waitingForConnection2 {
+  animation: blinker2 0.6s cubic-bezier(1, 0, 0, 1) infinite alternate;  
+}
+@keyframes blinker2 { to { opacity: 0; } }
+
+.waitingForConnection3 {
+  animation: blinker3 1s ease-in-out infinite alternate;  
+}
+@keyframes blinker3 { to { opacity: 0; } }
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
