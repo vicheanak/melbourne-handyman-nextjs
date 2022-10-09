@@ -17,6 +17,7 @@ const FormComponent = (props) => {
     const [errorMessage, setErrorMessage] = useState('');
     const [open, setOpen] = useState(false);
     const closeModal = () => setOpen(false);
+    const [isDisable, setIsDisabled] = useState(false);
 
     const onChangeFullname = (event) => {
         setFullName(event.target.value);
@@ -46,6 +47,7 @@ const FormComponent = (props) => {
     const handleSubmit=async (event)=>{
         event.preventDefault();
         setIsValidForm(true);
+        setIsDisabled(true);
         let isValid = true;
         if (!isValidEmail(email)){
             setIsValidForm(false);
@@ -82,7 +84,9 @@ const FormComponent = (props) => {
               const result = await response.json()
               setOpen(true);
               console.log({result});
-
+              setIsDisabled(false);
+              
+              
         }
             
 
@@ -110,7 +114,7 @@ const FormComponent = (props) => {
                     {!isValidForm && (
                             <label className={styles.errorLabel}>{errorMessage}</label>
                         )}
-                    <input className={styles.button} type="submit" value="Submit" />
+                    <input disabled={isDisable} className={styles.button} type="submit" value="Submit" />
                 </form>
             </div>
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>

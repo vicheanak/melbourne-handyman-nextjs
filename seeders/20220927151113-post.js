@@ -780,7 +780,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/1.jpg/"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/1.jpg"
   },
    {
       "id": 66,
@@ -792,7 +792,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/2.jpg/"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/2.jpg"
   },
    {
       "id": 67,
@@ -804,7 +804,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/3.jpg/"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/3.jpg"
   },
    {
       "id": 68,
@@ -816,7 +816,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/4.jpg/"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/4.jpg"
   },
    {
       "id": 69,
@@ -828,7 +828,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/5.jpg/"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/5.jpg"
   },
    {
       "id": 70,
@@ -840,7 +840,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/6.jpg/"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/6.jpg"
   },
    {
       "id": 71,
@@ -852,7 +852,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/7.jpg/"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/7.jpg"
   },
    {
       "id": 72,
@@ -864,7 +864,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/8.jpg/"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/8.jpg"
   },
    {
       "id": 73,
@@ -876,7 +876,7 @@ module.exports = {
       "CategoryId": 4,
       "createdAt": "2/2/2022",
       "updatedAt": "2/2/2022",
-      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/9.jpg/"
+      "imageUrl": "https://konseavpov.com/uploads/images/melbourne-handyman/fence/9.jpg"
   },
    {
       "id": 74,

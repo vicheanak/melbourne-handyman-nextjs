@@ -14,8 +14,10 @@ const MainComponent = (props) => {
             <div className={styles.imageContainer}>
                 {props?.posts?.posts?.map(post => (
                     <div key={post.id} className={styles.imageContent}>
-                        <Image unoptimized={true} alt={post.title} loader={myLoader} src={post.imageUrl} width={500}
-                            height={500} />
+                        <Image  objectFit="cover" layout="fixed" unoptimized={true} alt={post.title} loader={myLoader} src={post.imageUrl} 
+                        width={500}
+                            height={500} 
+                            />
                     </div>
                 ))}
             </div>

@@ -18,12 +18,12 @@ export default async function handler(req, res) {
   }
   if (method == 'POST') {
 
-    // let testAccount = await nodemailer.createTestAccount();
+    let testAccount = await nodemailer.createTestAccount();
 
     let transporter = nodemailer.createTransport({
       host: "smtp.mailgun.org",
-      port: 465,
-      secure: true, // true for 465, false for other ports
+      port: 587,
+      secure: false, // true for 465, false for other ports
       auth: {
         user: 'postmaster@melbourne-handyman.com.au', // generated ethereal user
         pass: '48e9f0caa15d1a1bbd56e3a731d38cb9-381f2624-440c228f', // generated ethereal password
@@ -55,6 +55,11 @@ export default async function handler(req, res) {
       text: textContent, // plain text body
       html: htmlContent, // html body
     });
+    
+    if (!info){
+      res.status(500).json({ error: 'Network Error' });
+      return false;
+    }
   
     console.log("Message sent: %s", info.messageId);
     // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
