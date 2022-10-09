@@ -32,7 +32,7 @@ export async function getServerSideProps({ params, req, res, query, preview, pre
         return { redirect: { destination: '/', permanent: false, }, }
     }
     const data = await fetch(`${process.env.HOST}/api/posts/?` + new URLSearchParams({
-        CategoryId: "2"
+        CategoryId: "4"
     }));
     const posts = await data.json();
     if (!data) {
