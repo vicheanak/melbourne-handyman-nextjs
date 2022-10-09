@@ -19,6 +19,7 @@ export default async function handler(req, res) {
   // }
   var query = {
     include: Categories,
+    limit: 30
   }
   if (req.query.CategoryId || req.query.isCarousel){
     query.where = {}
