@@ -17,7 +17,6 @@ const Kitchen = ({ posts, error }) => {
     return (
         <div className={styles.container}>
             <Header />
-            {/* <Nav /> */}
             <h1 className={styles.heading}>Get Quote</h1>
             <FormComponent />
         </div>

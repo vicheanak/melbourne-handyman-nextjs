@@ -4,6 +4,8 @@ import db from '../../models/index';
 db.sequelize.sync();
 const Quotes = db.Quote;
 const Categories = db.Category;
+const nodemailer = require("nodemailer");
+const mg = require('nodemailer-mailgun-transport');
 
 export default async function handler(req, res) {
 
@@ -15,8 +17,53 @@ export default async function handler(req, res) {
     quotes = await Quotes.findAll({});
   }
   if (method == 'POST') {
-    console.log('description ==> ', req.body);
-    console.log('fullname ==> ', req.fullname);
+
+    // let testAccount = await nodemailer.createTestAccount();
+
+    let transporter = nodemailer.createTransport({
+      host: "smtp.mailgun.org",
+      port: 465,
+      secure: true, // true for 465, false for other ports
+      auth: {
+        user: 'postmaster@melbourne-handyman.com.au', // generated ethereal user
+        pass: '48e9f0caa15d1a1bbd56e3a731d38cb9-381f2624-440c228f', // generated ethereal password
+      },
+    });
+
+    let htmlContent = `
+    <p>Fullname: ${req.body.fullname}</p>
+    <p>Email: ${req.body.email}</p>
+    <p>Phonenumber: ${req.body.phonenumber}</p>
+    <p>Address: ${req.body.address}</p>
+    <p>Description: ${req.body.description}</p>
+    `;
+
+    let textContent = `
+    Fullname: ${req.body.fullname} | 
+    Email: ${req.body.email} | 
+    Phonenumber: ${req.body.phonenumber} | 
+    Address: ${req.body.address} | 
+    Description: ${req.body.description} | 
+    `
+  
+    // send mail with defined transport object
+    let info = await transporter.sendMail({
+      from: req.body.email, // sender address
+      to: "sam@melbourne-handyman.com.au", // list of receivers
+      cc: "vicheanak@melbourne-handyman.com.au",
+      subject: "Quote from Website", // Subject line
+      text: textContent, // plain text body
+      html: htmlContent, // html body
+    });
+  
+    console.log("Message sent: %s", info.messageId);
+    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+  
+    // Preview only available when sending through an Ethereal account
+    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+
+
     quotes = await Quotes.create({ 
       description: req.body.description ? req.body.description : '',
       fullname: req.body.fullname ? req.body.fullname : '',
@@ -26,7 +73,7 @@ export default async function handler(req, res) {
       imageUrl: req.body.imageUrl ? req.body.imageUrl : ''
     });  
   }
-       
+
 
   res.status(200).json({ quotes })
 }

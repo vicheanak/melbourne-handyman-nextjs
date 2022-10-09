@@ -11,25 +11,25 @@ module.exports = {
       },
       {
         id: 2,
-        name: 'Fence',
+        name: 'Bathroom',
         createdAt: '12/12/2022',
         updatedAt: '2/2/2022'
       },
       {
         id: 3,
-        name: 'Floor',
+        name: 'Painting',
         createdAt: '12/12/2022',
         updatedAt: '2/2/2022'
       },
       {
         id: 4,
-        name: 'Tile',
+        name: 'Fence',
         createdAt: '12/12/2022',
         updatedAt: '2/2/2022'
       },
       {
         id: 5,
-        name: 'Fence',
+        name: 'Tile',
         createdAt: '12/12/2022',
         updatedAt: '2/2/2022'
       },
@@ -41,13 +41,7 @@ module.exports = {
       },
       {
         id: 7,
-        name: 'Wardrobe',
-        createdAt: '12/12/2022',
-        updatedAt: '2/2/2022'
-      },
-      {
-        id: 8,
-        name: 'Paint',
+        name: 'Landscape',
         createdAt: '12/12/2022',
         updatedAt: '2/2/2022'
       }
