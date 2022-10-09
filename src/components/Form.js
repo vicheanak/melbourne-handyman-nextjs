@@ -115,7 +115,7 @@ const FormComponent = (props) => {
             </div>
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>
                 <div className={styles.modal}>
-                    <p>Thanks, we'll get back soon!</p> 
+                    <p>Thanks, we will ll get back soon!</p> 
                 </div>
             </Popup>
         </main>
