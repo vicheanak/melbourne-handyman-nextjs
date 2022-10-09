@@ -18,6 +18,7 @@ const FormComponent = (props) => {
     const [open, setOpen] = useState(false);
     const closeModal = () => setOpen(false);
     const [isDisable, setIsDisabled] = useState(false);
+    const [popupMessage, setPopupMessage] = useState('');
 
     const onChangeFullname = (event) => {
         setFullName(event.target.value);
@@ -46,8 +47,10 @@ const FormComponent = (props) => {
 
     const handleSubmit=async (event)=>{
         event.preventDefault();
+        setPopupMessage('Sending...')
         setIsValidForm(true);
         setIsDisabled(true);
+        setOpen(true);
         let isValid = true;
         if (!isValidEmail(email)){
             setIsValidForm(false);
@@ -82,10 +85,13 @@ const FormComponent = (props) => {
           
               const response = await fetch(endpoint, options)
               const result = await response.json()
-              setOpen(true);
-              console.log({result});
+              setPopupMessage("Thanks, we will get back to you soon!");
               setIsDisabled(false);
-              
+                setFullName('');
+                setEmail('');
+                setPhonenumber('');
+                setAddress('');
+                setDescription('');
               
         }
             
@@ -119,7 +125,7 @@ const FormComponent = (props) => {
             </div>
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>
                 <div className={styles.modal}>
-                    <p>Thanks, we will ll get back soon!</p> 
+                    <p>{popupMessage}</p> 
                 </div>
             </Popup>
         </main>
