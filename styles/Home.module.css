@@ -29,7 +29,7 @@
 
 
 .footer {
-  padding: 1rem 0;
+  padding: 0rem 0;
   border-top: 1px solid #eaeaea;
 }
 
@@ -38,6 +38,16 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.footerLabelContainer{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footerLabel{
+  font-size: 14px;
+  height: 8px;
 }
 
 .title a {
@@ -242,7 +252,7 @@
     flex-direction: column;
   }
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   .card,
   .footer {
@@ -254,4 +264,4 @@
   .logo img {
     filter: invert(1);
   }
-}
+} */
