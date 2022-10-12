@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     content: DataTypes.STRING,
     metaData: DataTypes.STRING,
     imageUrl: DataTypes.STRING,
+    minImageUrl: DataTypes.STRING,
     isCarousel: DataTypes.BOOLEAN,
     status: DataTypes.BOOLEAN
   }, {

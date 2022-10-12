@@ -20,6 +20,9 @@ module.exports = {
       imageUrl: {
         type: Sequelize.STRING
       },
+      minImageUrl: {
+        type: Sequelize.STRING
+      },
       isCarousel: {
         type: Sequelize.BOOLEAN
       },

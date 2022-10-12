@@ -54,7 +54,7 @@ export default async function handler(req, res) {
       from: req.body.email, // sender address
       to: "sam@melbourne-handyman.com.au", // list of receivers
       cc: "vicheanak@melbourne-handyman.com.au",
-      subject: "Quote from Website", // Subject line
+      subject: "New Quote", // Subject line
       text: textContent, // plain text body
       html: htmlContent, // html body
     });
