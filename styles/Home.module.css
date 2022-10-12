@@ -40,10 +40,6 @@
   flex-grow: 1;
 }
 
-.footerLabelContainer{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 
 .footerLabel{
   font-size: 14px;
@@ -252,8 +248,8 @@
     flex-direction: column;
   }
 }
-/* 
-@media (prefers-color-scheme: dark) {
+
+/* @media (prefers-color-scheme: dark) {
   .card,
   .footer {
     border-color: #222;

@@ -18,10 +18,10 @@ const FooterComponent = (props) => {
                     </div>
                 </a>
             </Link>
-            {/* <div className={styles.footerLabelContainer}> */}
+            
                 <p className={styles.footerLabel}>POBox 22, Clarinda</p> 
                 <p className={styles.footerLabel}>ABN: 52 646 094 528</p>
-            {/* </div> */}
+            
         </footer>
     );
 }
