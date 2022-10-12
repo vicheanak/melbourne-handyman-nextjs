@@ -18,7 +18,7 @@ const FooterComponent = (props) => {
                     </div>
                 </a>
             </Link>
-            Copyright by Melbourne Handyman 2022
+            🏠 4 Tina Ct, Clarinda, Vic 3169 - <strong>ABN: 52 646 094 528</strong>
         </footer>
     );
 }

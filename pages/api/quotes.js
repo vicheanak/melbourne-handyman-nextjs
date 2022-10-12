@@ -20,13 +20,16 @@ export default async function handler(req, res) {
 
     let testAccount = await nodemailer.createTestAccount();
 
+    console.log('process.env.SMTP_USER', process.env.SMTP_USER);
+    console.log('process.env.SMTP_PASSORD', process.env.SMTP_PASSWORD);
+
     let transporter = nodemailer.createTransport({
-      host: "smtp.mailgun.org",
+      host: "smtp-relay.sendinblue.com",
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: 'postmaster@melbourne-handyman.com.au', // generated ethereal user
-        pass: '48e9f0caa15d1a1bbd56e3a731d38cb9-381f2624-440c228f', // generated ethereal password
+        user: process.env.SMTP_USER, // generated ethereal user
+        pass: process.env.SMTP_PASSWORD, // generated ethereal password
       },
     });
 
