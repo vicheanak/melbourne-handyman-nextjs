@@ -1,14 +1,14 @@
-import Head from next/head
-import Image from next/image
-import { Carousel } from ../src/components
-import styles from ../styles/Home.module.css
-import axios from axios;
-import logoPic from ../public/images/mh_logo.png
-import Link from next/link;
-import Nav from ../src/components/Nav;
-import Header from ../src/components/Header;
-import MainComponent from ../src/components/Main;
-import FooterComponent from ../src/components/Footer;
+import Head from 'next/head'
+import Image from 'next/image'
+import { Carousel } from '../src/components'
+import styles from '../styles/Home.module.css'
+import axios from 'axios';
+import logoPic from '../public/images/mh_logo.png'
+import Link from 'next/link';
+import Nav from '../src/components/Nav';
+import Header from '../src/components/Header';
+import MainComponent from '../src/components/Main';
+import FooterComponent from '../src/components/Footer';
 
 const PrivacyPolicy = () => {
 
