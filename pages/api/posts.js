@@ -31,6 +31,12 @@ export default async function handler(req, res) {
   if (req.query.isCarousel){
     query.where.isCarousel = req.query.isCarousel;
   }
+  if (!req.query.CategoryId){
+    query.where = {
+      isCarousel: true,
+      CategoryId: 8
+    }
+  }
   
   
 

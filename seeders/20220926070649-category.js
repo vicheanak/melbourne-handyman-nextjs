@@ -44,6 +44,12 @@ module.exports = {
         name: 'Landscape',
         createdAt: '12/12/2022',
         updatedAt: '2/2/2022'
+      },
+      {
+        id: 8,
+        name: 'Sam',
+        createdAt: '12/12/2022',
+        updatedAt: '2/2/2022'
       }
     ], {});
 
