@@ -112,11 +112,11 @@ const FormComponent = (props) => {
         <main className={styles.main}>
             <div className={styles.formContainer}>
                 <form onSubmit={handleSubmit}>
-                    <input className={styles.formInput} type="text" name="fullname" placeholder='Name' onChange={onChangeFullname}/>
-                    <input className={styles.formInput} type="text" name="email" placeholder='Email' onChange={onChangeEmail}/>
-                    <input className={styles.formInput} type="text" name="phonenumber" placeholder='Phone Number' onChange={onChangePhonenumber}/>
-                    <input className={styles.formInput} type="text" name="address" placeholder='Address' onChange={onChangeAddress}/>
-                    <textarea className={styles.formInputTextArea} type="textarea" name="description" placeholder='Description' onChange={onChangeDescription}/>
+                    <input className={styles.formInput} type="text" value={fullname} name="fullname" placeholder='Name' onChange={onChangeFullname}/>
+                    <input className={styles.formInput} type="text" value={email} name="email" placeholder='Email' onChange={onChangeEmail}/>
+                    <input className={styles.formInput} type="text" value={phonenumber} name="phonenumber" placeholder='Phone Number' onChange={onChangePhonenumber}/>
+                    <input className={styles.formInput} type="text" value={address} name="address" placeholder='Address' onChange={onChangeAddress}/>
+                    <textarea className={styles.formInputTextArea} value={description} type="textarea" name="description" placeholder='Description' onChange={onChangeDescription}/>
                     {!isValidForm && (
                             <label className={styles.errorLabel}>{errorMessage}</label>
                         )}

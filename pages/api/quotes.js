@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     console.log('process.env.SMTP_PASSORD', process.env.SMTP_PASSWORD);
 
     let transporter = nodemailer.createTransport({
-      host: "smtp-relay.sendinblue.com",
+      host: process.env.SMTP_HOST,
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
@@ -51,9 +51,8 @@ export default async function handler(req, res) {
   
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: req.body.email, // sender address
-      to: "sam@melbourne-handyman.com.au", // list of receivers
-      cc: "vicheanak@melbourne-handyman.com.au",
+      from: "sam@melbourne-handyman.com.au", // sender address
+      to: ["vicheanak@melbourne-handyman.com.au", "sam@melbourne-handyman.com.au"], // list of receivers
       subject: "New Quote", // Subject line
       text: textContent, // plain text body
       html: htmlContent, // html body
