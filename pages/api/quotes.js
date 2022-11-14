@@ -18,11 +18,6 @@ export default async function handler(req, res) {
   }
   if (method == 'POST') {
 
-    let testAccount = await nodemailer.createTestAccount();
-
-    console.log('process.env.SMTP_USER', process.env.SMTP_USER);
-    console.log('process.env.SMTP_PASSORD', process.env.SMTP_PASSWORD);
-
     let transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: 587,
@@ -48,14 +43,25 @@ export default async function handler(req, res) {
     Address: ${req.body.address} | 
     Description: ${req.body.description} | 
     `
-  
+
+    let attachments = [];
+    if (req.body.imageUrl) {
+      attachments.push({
+        filename: 'image.jpg',
+        content: req.body.imageUrl,
+        encoding: 'base64'
+      });
+    }
+
     // send mail with defined transport object
     let info = await transporter.sendMail({
       from: "sam@melbourne-handyman.com.au", // sender address
-      to: ["vicheanak@melbourne-handyman.com.au", "sam@melbourne-handyman.com.au"], // list of receivers
+      // to: ["vicheanak@melbourne-handyman.com.au", "sam@melbourne-handyman.com.au"], // list of receivers
+      to: ["vicheanak@melbourne-handyman.com.au"], // list of receivers
       subject: "New Quote", // Subject line
       text: textContent, // plain text body
       html: htmlContent, // html body
+      attachments: attachments
     });
     
     if (!info){
@@ -64,11 +70,6 @@ export default async function handler(req, res) {
     }
   
     console.log("Message sent: %s", info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-  
-    // Preview only available when sending through an Ethereal account
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 
 
     quotes = await Quotes.create({ 
@@ -77,8 +78,10 @@ export default async function handler(req, res) {
       phonenumber: req.body.phonenumber ? req.body.phonenumber : '',
       email: req.body.email ? req.body.email : '',
       address: req.body.address ? req.body.address : '',
-      imageUrl: req.body.imageUrl ? req.body.imageUrl : ''
+      imageUrl: ''
     });  
+
+    console.log('Successfully created quote');
   }
 
 
