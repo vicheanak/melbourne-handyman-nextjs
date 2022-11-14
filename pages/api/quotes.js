@@ -56,8 +56,8 @@ export default async function handler(req, res) {
     // send mail with defined transport object
     let info = await transporter.sendMail({
       from: "sam@melbourne-handyman.com.au", // sender address
-      // to: ["vicheanak@melbourne-handyman.com.au", "sam@melbourne-handyman.com.au"], // list of receivers
-      to: ["vicheanak@melbourne-handyman.com.au"], // list of receivers
+      to: ["vicheanak@melbourne-handyman.com.au", "sam@melbourne-handyman.com.au"], // list of receivers
+      // to: ["vicheanak@melbourne-handyman.com.au"], // list of receivers
       subject: "New Quote", // Subject line
       text: textContent, // plain text body
       html: htmlContent, // html body
